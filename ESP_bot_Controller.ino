@@ -8,8 +8,8 @@
 #define motor2B 33
 
 
-const char* wifi_name = "embedded-analytics"; //Your Wifi name
-const char* wifi_pass = "team@embedded";    //Your Wifi password
+const char* wifi_name = "yourssid"; //Your Wifi name
+const char* wifi_pass = "yourpassword";    //Your Wifi password
 WiFiServer server(80);                  //Port 80
 
 String header;
