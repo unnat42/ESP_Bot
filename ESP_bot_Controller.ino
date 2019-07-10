@@ -4,8 +4,8 @@
 
 #define motor1A 26
 #define motor1B 27
-#define motor2A 32
-#define motor2B 33
+#define motor2A 32    //Define the pins connected with the motor driver
+#define motor2B 33  
 
 
 const char* wifi_name = "yourssid"; //Your Wifi name
@@ -18,7 +18,7 @@ void setup()
 {
   Serial.begin(115200);
   pinMode(motor1A, OUTPUT);
-  pinMode(motor1B, OUTPUT);
+  pinMode(motor1B, OUTPUT);   //Setup the pins used
   pinMode(motor2A, OUTPUT);
   pinMode(motor2B, OUTPUT);
 
@@ -84,7 +84,7 @@ void loop()
             client.print("<body><a href = \"/left\"><button type=\"button\"  value=\"left\">Left</a></button>");
             client.print("<body><a href = \"/rev\"><button type=\"button\"  value=\"rev\">Reverse</a></button>");
             client.print("<body><a href = \"/right\"><button type=\"button\"  value=\"right\">Right</a></button>");
-
+              //The above lines are basiclly using html tags and creating a webpage with buttons like forward and left and so on 
 
 
             break;                            //Going out of the while loop
